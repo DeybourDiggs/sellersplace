@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+input,select, textarea {
+  min-height: 45px !important;
+  border: 1px solid #b9b9b9 !important;
+  width: 100% !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none !important;
+  border: 1px solid #b9b9b9 !important;
+  box-shadow: none !important;
+}
+
+button {
+  height: 45px !important;
+  box-shadow: none !important;
+}
