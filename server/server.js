@@ -4,6 +4,7 @@ require("dotenv").config();
 const connectDB = require("./config/dbConfig");
 const cors = require("cors");
 const usersRoute = require("./routes/userRoutes");
+const bidsRoute = require("./routes/bidsRoutes");
 const productsRoute = require("./routes/productRoutes");
 const port = process.env.PORT || 5000;
 
@@ -21,4 +22,5 @@ app.use(cors({ origin: true }));
 
 app.use("/api/users", usersRoute);
 app.use("/api/products", productsRoute);
+app.use("api/bids", bidsRoute);
 app.listen(port, () => console.log(`Node/Express Server started on ${port}`));
